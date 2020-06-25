@@ -13,3 +13,7 @@ S – Single Responsibility Principle (SRP)
     Tanto Pastel como Helado, pueden añadirse aderezos a los mismos, por lo que no
     es necesario tener metodos duplicados que pueden hacer la misma función
     para cada postre.
+
+O- Open-Close Principle
+	Enum Adicionales.Aderezo es muy estático, para obtener un nuevo aderezo debo modificar el enum para colocar un nombre, pero al convertirlo a clase abstracta
+	con un método para setear el nombre y el toString(), se permite extender a los aderezos que se desea.
