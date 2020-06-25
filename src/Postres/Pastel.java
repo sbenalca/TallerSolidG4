@@ -5,19 +5,15 @@
  */
 package Postres;
 
-import java.util.ArrayList;
-import Adicionales.Aderezo;
-
 /**
  *
  * @author Sebastián Benalcázar
  */
-public class Pastel extends Postre{
-    
+public class Pastel extends Postre {
+
     public Pastel(String sabor) {
         super(sabor);
         super.setPrecioParcial(15.55);
     }
-    
-    
+
 }
