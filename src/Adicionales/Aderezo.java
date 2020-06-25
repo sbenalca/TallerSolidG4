@@ -10,7 +10,7 @@ package Adicionales;
  * @author Pedro Mendoza
  */
 public abstract class Aderezo {
-    String nombre;
+    protected String nombre;
     
     public Aderezo(){
         this.nombre="";

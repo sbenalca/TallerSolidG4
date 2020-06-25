@@ -12,7 +12,8 @@ package Adicionales;
 public class Frutilla extends Aderezo{
     
     public Frutilla(){
-    super();
+		super();
+		setNombre();
     }
     
     @Override

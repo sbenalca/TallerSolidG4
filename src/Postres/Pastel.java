@@ -16,4 +16,13 @@ public class Pastel extends Postre {
         super.setPrecioParcial(15.55);
     }
 
+	@Override
+	public String toString() {
+	
+		return "Pastel " + super.toString();
+	
+	}
+
+	
+	
 }

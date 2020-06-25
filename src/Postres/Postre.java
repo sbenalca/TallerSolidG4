@@ -14,9 +14,9 @@ import java.util.ArrayList;
  */
 public class Postre {
 
-    private String sabor;
-    private double precioParcial;
-    private ArrayList<Aderezo> aderezos;
+    protected String sabor;
+    protected double precioParcial;
+    protected ArrayList<Aderezo> aderezos;
 
     public Postre(String sabor) {
         aderezos = new ArrayList<>();
@@ -46,10 +46,8 @@ public class Postre {
 
     @Override
     public String toString() {
-        return "Pastel{" + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}';
+        return "{sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos.toString() + '}';
     }
-
-    
 
     /**
      * @author Alexis Poveda
@@ -60,12 +58,18 @@ public class Postre {
      * 
      */
 
-    public static void anadirAderezo(Postre postre, Aderezo aderezo) {
-        postre.getAderezos().add(aderezo);
-    }
+    public void anadirAderezo(Aderezo aderezo) {
+    
+		this.getAderezos().add(aderezo);
+    
+	}
 
-    public static void quitarAderezo(Postre postre, Aderezo aderezo) {
-        postre.getAderezos().remove(aderezo);
-    }
+    public Aderezo quitarAderezo(Aderezo aderezo) {
+		
+		int index = this.getAderezos().indexOf(aderezo);
+        
+		return (this.getAderezos().remove(index));
+    
+	}
 
 }

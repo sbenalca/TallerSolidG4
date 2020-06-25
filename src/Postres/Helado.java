@@ -16,4 +16,9 @@ public class Helado extends Postre {
         super.setPrecioParcial(7.85);
     }
 
+	@Override
+	public String toString() {
+		return "Helado " + super.toString();
+	}
+	
 }

@@ -12,12 +12,15 @@ package Adicionales;
 public class Crema extends Aderezo{
     
     public Crema(){
-    super();
+    
+		super();
+		setNombre();
+	
     }
     
     @Override
     public void setNombre() {
-        nombre="crema";
+        nombre="Crema";
     }
 
     @Override
