@@ -11,6 +11,8 @@ import java.util.ArrayList;
 /**
  *
  * @author darin
+ * Se puede concluir utilizamos el principio de SIngle responsability, debido a que creamos una nueva clase para que desarrolle
+ * una única responsabilidad en este caso sería el manejo de los precios
  */
 public class ManejadorDePrecios {
      public double calcularPrecioFinal(double precioParcial, ArrayList<Aderezo> aderezos) {
