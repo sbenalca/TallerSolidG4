@@ -2,10 +2,11 @@
 
 Principios Solid Violentados:
 
-S – Single Responsibility Principle (SRP)
+S – Open - Close (SRP)
 
-    En las clases Helado y Pastel existn 2 métodos llamados: calcularPrecioFinal() y  showPrecioFinal()
-    Ambos métodos son similares para ambas clases y no estan ligados al objetivo principal de las clases, el cual es servir de modelo para el proceso de administrar los postres pedidos. 
+    En el literal 1 En las clases Helado y Pastel existn 2 métodos llamados: calcularPrecioFinal() y  showPrecioFinal()
+    Clases Helado y Pastel. Tienen mucha similitud, se debería crear una clase padre llamada Postre
+    Con esta nueva clase llamada Postre esta queda cerrada para su modificación pero abierta a extensión por parte de sus clases hijas Helado y Postre 
 
 S – Single Responsibility Principle (SRP)
 
@@ -14,6 +15,8 @@ S – Single Responsibility Principle (SRP)
     es necesario tener metodos duplicados que pueden hacer la misma función
     para cada postre.
 
-O- Open-Close Principle
-	Enum Adicionales.Aderezo es muy estático, para obtener un nuevo aderezo debo modificar el enum para colocar un nombre, pero al convertirlo a clase abstracta
-	con un método para setear el nombre y el toString(), se permite extender a los aderezos que se desea.
+S- Single Responsability Principle (SRP)
+
+En el literal 3 se puede concluir utilizamos el principio de SIngle responsability, 
+debido a que creamos una nueva clase para que desarrolle
+una única responsabilidad en este caso sería el manejo de los precios
